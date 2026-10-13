@@ -13,6 +13,11 @@ REGOLE
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+const nome = "Paolo";
+const cognome = "Milan";
+
+console.log(`ciao, mi chiamo ${nome} ${cognome}`);
+
 /* ESERCIZIO 2 — Calcolatrice base
    Due numeri "a" e "b".
    Stampa le 6 operazioni nel formato "10 + 3 = 13":
@@ -20,6 +25,16 @@ REGOLE
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+const a = 10
+const b = 3
+
+console.log(`${a}+${b} = ${a + b}`);
+console.log(`${a}-${b} = ${a - b}`);
+console.log(`${a}*${b} = ${a * b}`);
+console.log(`${a}/${b} = ${a / b}`);
+console.log(`${a}%${b} = ${a % b}`);
+console.log(`${a}**${b} = ${a ** b}`);
 
 /* ESERCIZIO 3 — Età nel tempo
    const annoNascita (scegli un anno).
@@ -29,6 +44,14 @@ REGOLE
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+const annoNascita = 2004;
+const annoCorrente = 2026;
+const eta = annoCorrente - annoNascita;
+
+console.log(`ad oggi ho ${eta}`);
+console.log(`tra 10 anni avrai ${eta + 10}`);
+console.log(`5 anni fa avevo ${eta - 5} anni`);
 
 /* ESERCIZIO 4 — Maggiorenne?
    Variabile "eta".
