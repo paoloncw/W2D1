@@ -1,106 +1,86 @@
-/* ESERCIZIO 1 — Saluto personalizzato */
+/*
+REGOLE
+- Le risposte vanno scritte in JavaScript sotto ogni commento.
+- Puoi testare aprendo index.html nel browser e guardando la console (DevTools).
+- In alternativa: nel terminale, `node script.js`.
+- Cerca nei motori di ricerca solo cose non viste a lezione. Tutto il necessario è già stato spiegato stamattina.
+*/
 
-const nome = "Mario";
-const cognome = "Rossi";
-console.log(`Ciao, mi chiamo ${nome} ${cognome}.`);
+/* ESERCIZIO 1 — Saluto personalizzato
+   Crea due const "nome" e "cognome".
+   Stampa con un template literal: "Ciao, mi chiamo Mario Rossi."
+*/
 
+/* SCRIVI QUI LA TUA RISPOSTA */
 
-/* ESERCIZIO 2 — Calcolatrice base */
+/* ESERCIZIO 2 — Calcolatrice base
+   Due numeri "a" e "b".
+   Stampa le 6 operazioni nel formato "10 + 3 = 13":
+   somma, differenza, prodotto, divisione, resto (%), elevamento (**).
+*/
 
-const a = 10;
-const b = 3;
-console.log(`${a} + ${b} = ${a + b}`);
-console.log(`${a} - ${b} = ${a - b}`);
-console.log(`${a} * ${b} = ${a * b}`);
-console.log(`${a} / ${b} = ${a / b}`);
-console.log(`${a} % ${b} = ${a % b}`);
-console.log(`${a} ** ${b} = ${a ** b}`);
+/* SCRIVI QUI LA TUA RISPOSTA */
 
+/* ESERCIZIO 3 — Età nel tempo
+   const annoNascita (scegli un anno).
+   const annoCorrente = 2026.
+   Stampa: età oggi, età tra 10 anni, età 5 anni fa.
+   Formato: "Tra 10 anni avrai 35 anni."
+*/
 
-/* ESERCIZIO 3 — Età nel tempo */
+/* SCRIVI QUI LA TUA RISPOSTA */
 
-const annoNascita = 2001;
-const annoCorrente = 2026;
-const etaOggi = annoCorrente - annoNascita;
-console.log(`Oggi hai ${etaOggi} anni.`);
-console.log(`Tra 10 anni avrai ${etaOggi + 10} anni.`);
-console.log(`5 anni fa avevi ${etaOggi - 5} anni.`);
+/* ESERCIZIO 4 — Maggiorenne?
+   Variabile "eta".
+   Calcola "maggiorenne" come "eta >= 18".
+   Stampa: "Età: 25 — Maggiorenne: true"
+*/
 
+/* SCRIVI QUI LA TUA RISPOSTA */
 
-/* ESERCIZIO 4 — Maggiorenne? */
+/* ESERCIZIO 5 — Tipo del valore
+   Cinque variabili: una string, una number, una boolean, una null, una undefined.
+   Stampa per ognuna: "nome è di tipo: string" usando typeof.
+   In commento sopra la variabile null: spiega cosa ritorna typeof null e perché.
+*/
 
-const eta = 25;
-const maggiorenne = eta >= 18;
-console.log(`Età: ${eta} — Maggiorenne: ${maggiorenne}`);
+/* SCRIVI QUI LA TUA RISPOSTA */
 
+/* ESERCIZIO 6 — === vs ==
+   numero = 5
+   stringa = "5"
+   Stampa il risultato di "numero == stringa" e "numero === stringa".
+   In commento, una riga: spiega la differenza.
+*/
 
-/* ESERCIZIO 5 — Tipo del valore */
+/* SCRIVI QUI LA TUA RISPOSTA */
 
-const testo = "Mario";
-const numero = 42;
-const attivo = true;
-// typeof null ritorna "object" — è un bug storico di JavaScript
-// presente fin dalla prima versione del linguaggio (1995) e mai corretto
-// per non rompere il codice esistente.
-const vuoto = null;
-let nonDefinito;
+/* ESERCIZIO 7 — Conversioni implicite
+   Senza eseguire il codice, prevedi in commento il risultato di queste 4 espressioni.
+   Poi stampale per verificare.
+   - "5" + 3
+   - "5" - 3
+   - true + 1
+   - "10" * "2"
+*/
 
-console.log(`testo è di tipo: ${typeof testo}`);
-console.log(`numero è di tipo: ${typeof numero}`);
-console.log(`attivo è di tipo: ${typeof attivo}`);
-console.log(`vuoto è di tipo: ${typeof vuoto}`);
-console.log(`nonDefinito è di tipo: ${typeof nonDefinito}`);
+/* SCRIVI QUI LA TUA RISPOSTA */
 
+/* ESERCIZIO 8 — Classificazione numero
+   Variabile "n".
+   Usando % e operatori logici, stampa tre righe:
+   "n è pari: true/false"
+   "n è divisibile per 3: true/false"
+   "n è pari E divisibile per 3: true/false"
+*/
 
-/* ESERCIZIO 6 — === vs == */
+/* SCRIVI QUI LA TUA RISPOSTA */
 
-const numeroSei = 5;
-const stringaSei = "5";
-console.log(`numero == stringa: ${numeroSei == stringaSei}`);
-console.log(`numero === stringa: ${numeroSei === stringaSei}`);
-// "==" converte i tipi prima di confrontare; "===" no.
+/* --EXTRA-- ESERCIZIO 9 — Triangolo
+   Tre const "a", "b", "c" (lunghezze dei lati).
+   Calcola perimetro.
+   Determina il tipo: "equilatero", "isoscele", "scaleno".
+   Stampa: "Triangolo isoscele, perimetro 15"
+*/
 
-
-/* ESERCIZIO 7 — Conversioni implicite */
-
-// Previsioni:
-// "5" + 3   → "53"   (string + number → concatenazione)
-// "5" - 3   → 2      (number con conversione automatica)
-// true + 1  → 2      (true → 1)
-// "10" * "2" → 20    (entrambe le stringhe → number)
-
-console.log(`"5" + 3 = ${"5" + 3}`);
-console.log(`"5" - 3 = ${"5" - 3}`);
-console.log(`true + 1 = ${true + 1}`);
-console.log(`"10" * "2" = ${"10" * "2"}`);
-
-
-/* ESERCIZIO 8 — Classificazione numero */
-
-const n = 12;
-const pari = n % 2 === 0;
-const divisibilePer3 = n % 3 === 0;
-const pariEDivisibilePer3 = pari && divisibilePer3;
-
-console.log(`${n} è pari: ${pari}`);
-console.log(`${n} è divisibile per 3: ${divisibilePer3}`);
-console.log(`${n} è pari E divisibile per 3: ${pariEDivisibilePer3}`);
-
-
-/* --EXTRA-- ESERCIZIO 9 — Triangolo */
-
-const lato1 = 5;
-const lato2 = 5;
-const lato3 = 5;
-const perimetro = lato1 + lato2 + lato3;
-
-let tipo;
-if (lato1 === lato2 && lato2 === lato3) {
-  tipo = "equilatero";
-} else if (lato1 === lato2 || lato2 === lato3 || lato1 === lato3) {
-  tipo = "isoscele";
-} else {
-  tipo = "scaleno";
-}
-
-console.log(`Triangolo ${tipo}, perimetro ${perimetro}`);
+/* SCRIVI QUI LA TUA RISPOSTA */
