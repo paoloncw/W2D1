@@ -61,6 +61,9 @@ console.log(`5 anni fa avevo ${eta - 5} anni`);
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+const maggiorenne = eta >= 18;
+console.log(`Età: ${eta} Maggiorenne: ${maggiorenne}`);
+
 /* ESERCIZIO 5 — Tipo del valore
    Cinque variabili: una string, una number, una boolean, una null, una undefined.
    Stampa per ognuna: "nome è di tipo: string" usando typeof.
