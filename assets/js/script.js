@@ -72,6 +72,20 @@ console.log(`Età: ${eta} Maggiorenne: ${maggiorenne}`);
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+const soprannome = "Paolino"
+const altezza = 170
+const altezzaMinima = altezza >= 170
+const peso = null
+let data = undefined;
+
+/* console.log(`${soprannome} è di tipo: string`) -> si puo scrivere anche così SENZA il type of ma il risultato e migliore CON il typeof */
+
+console.log(`il soprannome ${soprannome} è di tipo: ${typeof soprannome}`)
+console.log(`l'altezza ${altezza} è di tipo: ${typeof altezza}`)
+console.log(`l'altezza minima ${altezzaMinima} è di tipo: ${typeof altezzaMinima}`)
+console.log(`il peso ${peso} è di tipo: ${typeof peso}`) /* ritorna OBJECT */
+console.log(`la data ${data} è di tipo: ${typeof data}`);
+
 /* ESERCIZIO 6 — === vs ==
    numero = 5
    stringa = "5"
@@ -81,16 +95,27 @@ console.log(`Età: ${eta} Maggiorenne: ${maggiorenne}`);
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+const numero = 5
+const stringa = "5"
+
+console.log(numero == stringa)
+console.log(numero === stringa);
+
 /* ESERCIZIO 7 — Conversioni implicite
    Senza eseguire il codice, prevedi in commento il risultato di queste 4 espressioni.
    Poi stampale per verificare.
-   - "5" + 3
-   - "5" - 3
-   - true + 1
-   - "10" * "2"
+   - "5" + 3 da "53" perche li unisce
+   - "5" - 3 da 2 perche trasforma la stringa in numero
+   - true + 1 da 2 perche true ha valore 1 e false valore 0
+   - "10" * "2" da 20 perche trasorma automaticamnte le string in number
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+console.log("5" + 3)
+console.log("5" - 3)
+console.log(true + 1)
+console.log("10" * "2")
 
 /* ESERCIZIO 8 — Classificazione numero
    Variabile "n".
@@ -101,6 +126,12 @@ console.log(`Età: ${eta} Maggiorenne: ${maggiorenne}`);
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+const n = 12
+
+console.log(`${n} è pari: ${n % 2 === 0}`)
+console.log(`${n} è divisibile per 3: ${n % 3 === 0}`)
+console.log(`${n} è pari E divisibile per 3: ${n % 2 === 0 && n % 3 === 0}`)
 
 /* --EXTRA-- ESERCIZIO 9 — Triangolo
    Tre const "a", "b", "c" (lunghezze dei lati).
